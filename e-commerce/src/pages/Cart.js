@@ -11,7 +11,7 @@ import '../styles/Cart.css';
   MDBBtn,
   MDBInputGroup,
   MDBInput,
-} from "mdb-react-ui-kit";
+from ;"mdb-react-ui-kit"; 
 
 const Products = () => {}
   const [searchItem, setSearchItem] = useState("");
@@ -43,7 +43,7 @@ const Products = () => {}
       const newCartItem = { ...item, quantity: 1 };
       setCartItems([...cartItems, newCartItem]);
     }
-  };
+  
 
   return (
     <div>
@@ -80,3 +80,5 @@ const Products = () => {}
         </div>
       </div>
       </div>
+  )};
+  export default Cart

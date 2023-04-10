@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import ProductsArray from "./ProductsArray";
 import '../styles/filter.css'
 import Button from "./button";
+import ProductItems from "../pages/productitem";
 
 const ArrayCard = () => {
 
@@ -14,7 +15,7 @@ const ArrayCard = () => {
   const handleChange = (e) => setSearch(e.target.value);
 
   useEffect(() => {
-      setProducts(ProductsArray);
+      setProducts(ProductItems);
   }, []);
 
   const [minPrice, setMinPrice] = useState(0);

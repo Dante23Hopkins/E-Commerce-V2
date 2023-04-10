@@ -6,9 +6,10 @@
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(6, 1fr);
     grid-gap: 20px;
+    height: 40%;
   }
   
-  .product-card {
+  /* .product-card {
     width: 100%;
     height: 100%;
     display: flex;
@@ -20,8 +21,40 @@
     box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: all 0.3s ease;
-  }
+  } */
+
+.ptext {
+  color: lightgray;
+  text-align: center;
+  font-size: 25px;
+}
+/* .pdes{
+ 
+} */
+  /* .pimg{
+display: flex;
+flex-wrap: wrap;
+justify-content: center; */
+.pimg {
+  width: 550px; /* set a fixed width */
+  height: 550px; /* set a fixed height */
+  overflow: hidden; /* hide any image overflow */
+  justify-content: center;
+  margin: 1px 100px 1px 1px;
+}
+
+.pimg img {
+  width: 100%; /* make the image fill the parent container */
+  height: auto; /* maintain aspect ratio */
+  display: flex; /* remove any default inline-block spacing */
+  object-fit: cover; /* maintain aspect ratio and fill the container */
+  justify-content: center;
+  align-items: center;
+}
+
+
   
+    
   .price-filter {
     display: flex;
     align-items: center;
