@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../styles/home.css";
 
 function Home() {
@@ -52,7 +53,7 @@ function Home() {
       
       <div className="welcome">
         <h1>STAY HYDRATED AND REFRESHED ON-THE-GO WITH OUR WIDE SELECTION OF STYLISH AND DURABLE WATER BOTTLES, PERFECT FOR ANY ADVENTURE OR DAILY ROUTINE!</h1>
-        <a href="/products"><button className="explore">SHOP NOW!</button></a>
+        <Link to="/product"><button className="explore">SHOP NOW!</button></Link>
       </div>
     </div>
 

@@ -25,14 +25,14 @@ body {
 .products-container h2 {
     margin-top: 30px;
     font-size: 1.2rem;
-    color: #283618;
+    color: white;
 }
 
 .products-container p {
     margin-top: 30px;
     margin: 2rem;
     font-size: 1rem;
-    color: #283618;
+    color: white;
 }
 
 .product-item {
