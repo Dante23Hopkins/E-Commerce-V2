@@ -98,6 +98,18 @@ justify-content: center; */
     margin: 0;
   }
   
+  .btn-dark {
+    background-color: forestgreen;
+    color: #fff; /* Set the font color to white */
+  }
+  .green-button {
+    background-color: green;
+    color: #fff;
+    border: 2px solid #000; /* Add a black border */
+    border-radius: 5px; /* Add a small border radius to round the edges */
+    padding: 10px 20px; /* Add some padding to the button */
+  }
+  
   
   
   .product-card:hover {

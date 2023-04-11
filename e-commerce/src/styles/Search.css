@@ -1,0 +1,47 @@
+.wrapper__filter {
+    display: flex;
+    position: relative;
+    text-align: center;
+
+}
+
+.searchwrap{
+    margin: 10rem;
+}
+
+label {
+    color: grey;
+    font-size: 25px;
+    font-weight: 100px;
+}
+
+input {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 15px;
+    background-color: rgba(253, 250, 250, 0.993);
+    border: 3px solid #f4e2c5;
+}
+
+.searchBar input {
+    width: 50%;
+}
+
+.searchBar {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.maxnmin {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width:50%;
+}
+.filter-price{
+    width: 50%;
+}

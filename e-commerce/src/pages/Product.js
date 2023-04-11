@@ -1,90 +1,96 @@
 
 import React from "react"
 import { useState } from "react"
-import '../styles/products.css'
+// import '../styles/products.css'
 import { ProductItems } from "./productitem"
+import ArrayCard from "../components/ArrayCard";
+import '../styles/Filter.css'
+import '../styles/Search.css'
 
 
-import {
-    MDBCard,
-    MDBCardTitle,
-    MDBCardText,
-    MDBCardBody,
-    MDBCardImage,
-    MDBRow,
-    MDBCol,
-    MDBBtn,
-    MDBInputGroup, 
-    MDBInput,
+// import {
+//     MDBCard,
+//     MDBCardTitle,
+//     MDBCardText,
+//     MDBCardBody,
+//     MDBCardImage,
+//     MDBRow,
+//     MDBCol,
+//     MDBBtn,
+//     MDBInputGroup, 
+//     MDBInput,
 
-  } from 'mdb-react-ui-kit';
+//   } from 'mdb-react-ui-kit';
 
 
 const Products = () => {
 
   
-  const[searchItem, setSearchItem] = useState("")
-  const [ price, setPrice ] = useState(16);
-  const [selectedCategory, setSelectedCategory] = useState("");
-const [minPrice, setMinPrice] = useState("");
-const [maxPrice, setMaxPrice] = useState("");
+//   const[searchItem, setSearchItem] = useState("")
+//   const [ price, setPrice ] = useState(16);
+//   const [selectedCategory, setSelectedCategory] = useState("");
+// const [minPrice, setMinPrice] = useState("");
+// const [maxPrice, setMaxPrice] = useState("");
 
-const handleMinPriceChange = (e) => {
-  setMinPrice(e.target.value);
-};
+// const handleMinPriceChange = (e) => {
+//   setMinPrice(e.target.value);
+// };
 
-const handleMaxPriceChange = (e) => {
-  setMaxPrice(e.target.value);
-};
+// const handleMaxPriceChange = (e) => {
+//   setMaxPrice(e.target.value);
+// };
 
-const handleResetPriceFilter = () => {
-  setMinPrice("");
-  setMaxPrice("");
-};
+// const handleResetPriceFilter = () => {
+//   setMinPrice("");
+//   setMaxPrice("");
+// };
 
 
 
-<div className="price-filter">
-  <div className="price-input">
-    <label htmlFor="min-price">Min Price:</label>
-    <input
-      type="number"
-      id="min-price"
-      name="min-price"
-      value={minPrice}
-      onChange={handleMinPriceChange}
-    />
-  </div>
-  <div className="price-input">
-    <label htmlFor="max-price">Max Price:</label>
-    <input
-      type="number"
-      id="max-price"
-      name="max-price"
-      value={maxPrice}
-      onChange={handleMaxPriceChange}
-    />
-  </div>
-  <button className="reset-btn" onClick={handleResetPriceFilter}>
-    Reset
-  </button>
-</div>
+// <div className="price-filter">
+//   <div className="price-input">
+//     <label htmlFor="min-price">Min Price:</label>
+//     <input
+//       type="number"
+//       id="min-price"
+//       name="min-price"
+//       value={minPrice}
+//       onChange={handleMinPriceChange}
+//     />
+//   </div>
+//   <div className="price-input">
+//     <label htmlFor="max-price">Max Price:</label>
+//     <input
+//       type="number"
+//       id="max-price"
+//       name="max-price"
+//       value={maxPrice}
+//       onChange={handleMaxPriceChange}
+//     />
+//   </div>
+//   <button className="reset-btn" onClick={handleResetPriceFilter}>
+//     Reset
+//   </button>
+// </div>
   
 
-function handleCategoryChange(event) {
-  setSelectedCategory(event.target.value);
-}
+// function handleCategoryChange(event) {
+//   setSelectedCategory(event.target.value);
+// }
 
   
-  const handleInput = (e)=>{
-    setPrice( e.target.value );
-  } 
+//   const handleInput = (e)=>{
+//     setPrice( e.target.value );
+//   } 
 
   return(
 
 <div>
 
-<div className="product-filters">
+
+<ArrayCard />
+</div>
+/*{ <div className="product-filters">
 <div className="search-bar">
             <MDBInputGroup >
       <MDBInput label='Search' onChange={(event)=> setSearchItem(event.target.value)} />
@@ -147,8 +153,8 @@ function handleCategoryChange(event) {
           <div className="pdes">
           <MDBCardText>{item.description}</MDBCardText>
           </div>
-          <MDBBtn class="btn btn-dark" href="#">
-            Add to order
+          <MDBBtn class="btn btn-dark green-button" href="#">
+           Add to order
           </MDBBtn>
           </div>
         </MDBCardBody>
@@ -157,9 +163,9 @@ function handleCategoryChange(event) {
   </MDBCard>
 ))}       
       </div>
-    </div>
-)
-  }
+    </div> }
+)*/
+  )}
 
 export default Products;
 

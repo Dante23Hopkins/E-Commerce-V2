@@ -15,7 +15,7 @@ function Navbar() {
           <a href="/products" className="nav-link">Products</a>
         </li>
         <li className="nav-item">
-          <a href="/cart" className="nav-link">Cart</a>
+          {/* <a href="/cart" className="nav-link">Cart</a> */}
         </li>
         <li className="nav-item">
           <a href="/contact" className="nav-link">Contact</a>
